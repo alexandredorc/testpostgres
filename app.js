@@ -7,7 +7,6 @@ var path = require('path');
 
 var app = express();
 
-const route = require('./routes/route')
 //port no
 
 const port = 3000;
@@ -18,15 +17,13 @@ app.use(bodyparser.json());
 
 app.use('/static',express.static(path.join(__dirname, 'public')));
 
-app.use('/api',route);
-
 
 //testing
 app.get('/',(req, res)=>{
 	res.sendFile(path.join(__dirname,'/public/index.html'));
 });
 
-app.get('/test',(req, res)=>{
+app.get('/register',(req, res)=>{
 	res.sendFile(path.join(__dirname,'/public/test.html'));
 });
 

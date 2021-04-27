@@ -4,7 +4,8 @@
   "description": "myapp",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+	"start": "node app.js \"test I guess is not working\" && exit 1"
   },
   "author": "alexandredorc",
   "license": "ISC",
