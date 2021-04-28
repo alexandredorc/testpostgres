@@ -10,18 +10,21 @@
 		Register
 	</h1>
 	</br>
+	
+	<form action="/register" method="POST">
 	Nom d'utilisateur
-	<input placeholder="Name"></br>
+	<input name="name" placeholder="Name"></br>
 	Adress email
-	<input placeholder="mail"></br>
+	<input name="email" placeholder="mail"></br>
 	Mot de passe
-	<input type="password" placeholder="MDP"></br>
+	<input name="password" type="password" placeholder="MDP"></br>
 	
 	Confirmer Mot de passe
-	<input type="password" placeholder="MDP">
+	<input name="repassword" type="password" placeholder="MDP">
 	</br>
-	<button type="button" class="btn btn-primary">
+	<button type="submit" class="btn btn-primary">
  	 Confirmer</button>
+	</form>
 </body>
 </html>
 
